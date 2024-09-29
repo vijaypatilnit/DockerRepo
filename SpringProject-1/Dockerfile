@@ -1,4 +1,4 @@
-FROM java:8-jdk-alphine
+FROM java:8-jdk-alpine
 COPY ./target/SpringProject-1.jar /usr/app/
 WORKDIR /usr/app
 RUN sh -c 'touch SpringProject-1.jar'
