@@ -1,5 +1,5 @@
 FROM openjdk:17-jdk-alpine
-COPY ./target/SpringProject-1.jar /usr/app/
+COPY ./target/SpringProject-1-0.0.1-SNAPSHOT.jar /usr/app/
 WORKDIR /usr/app
-RUN sh -c 'touch SpringProject-1.jar'
-ENTRYPOINT [ "java","-jar","SpringProject-1.jar" ]
+RUN sh -c 'touch SpringProject-1.0.0.1-SNAPSHOT.jar'
+ENTRYPOINT [ "java","-jar","SpringProject-1.0.0.1-SNAPSHOT.jar" ]
